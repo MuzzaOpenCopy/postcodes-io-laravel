@@ -1,10 +1,10 @@
 {
-    "name": "adityamenon/postcodes-io-laravel",
+    "name": "chadanuk/postcodes-io-laravel",
     "description": "",
     "authors": [
         {
-            "name": "aditya menon",
-            "email": "hello@adityamenon.co"
+            "name": "chadanuk",
+            "email": "chadanuk@gmail.com"
         }
     ],
     "require": {
