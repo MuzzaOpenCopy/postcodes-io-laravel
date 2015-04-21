@@ -1,6 +1,6 @@
 <?php 
 
-use Adityamenon\PostcodesIo\ApiClientFactory;
+use Chadanuk\PostcodesIo\ApiClientFactory;
 use GuzzleHttp\Message\Response;
 use GuzzleHttp\Subscriber\Mock;
 

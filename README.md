@@ -1,5 +1,6 @@
 PostcodesIo Laravel Package
 ============================
+This is a fork of https://travis-ci.org/adityamenon/postcodes-io-laravel.svg to work on Laravel 5.
 
 [![Build Status](https://travis-ci.org/adityamenon/postcodes-io-laravel.svg?branch=1.0.1)](https://travis-ci.org/adityamenon/postcodes-io-laravel)
 
@@ -16,25 +17,25 @@ Installation is handled via [Composer](http://getcomposer.org).
 
 1. Run the following command:
     ```bash
-    $ composer require adityamenon/postcodes-io ~1.0
+    $ composer require chadanuk/postcodes-io dev-master
     ```
     This should add the following to your project's `composer.json` file:
 
     ```js
     "require": {
-        "adityamenon/postcodes-io": "~1.0"
+        "chadanuk/postcodes-io": "dev-master"
     }
     ```
 2. Add the Service Provider to your `app/config/app.php` file:
 
     ```php
-    'providers' => array('Adityamenon\PostcodesIo\PostcodesIoServiceProvider')
+    'providers' => array('Chadanuk\PostcodesIo\PostcodesIoServiceProvider')
     ```
 
 3. Add the Facade in the same file:
 
     ```php
-    'aliases' => array('PostcodesIo' => 'Adityamenon\PostcodesIo\Facade')
+    'aliases' => array('PostcodesIo' => 'Chadanuk\PostcodesIo\Facade')
     ```
 
 Usage
