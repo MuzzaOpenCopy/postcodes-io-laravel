@@ -1,4 +1,4 @@
-<?php namespace Adityamenon\PostcodesIo;
+<?php namespace Chadanuk\PostcodesIo;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
@@ -6,6 +6,6 @@ class Facade extends IlluminateFacade
 {
     protected static function getFacadeAccessor()
     {
-        return 'adityamenon.postcodes-io';
+        return 'chadanuk.postcodes-io';
     }
 }

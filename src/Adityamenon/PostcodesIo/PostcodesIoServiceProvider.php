@@ -1,4 +1,4 @@
-<?php namespace Adityamenon\PostcodesIo;
+<?php namespace Chadanuk\PostcodesIo;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class PostcodesIoServiceProvider extends ServiceProvider
     */
     public function boot()
     {
-        $this->package('adityamenon/postcodes-io');
+        $this->package('chadanuk/postcodes-io');
     }
 
     /**
@@ -28,7 +28,7 @@ class PostcodesIoServiceProvider extends ServiceProvider
     */
     public function register()
     {
-        $this->app->bind('adityamenon.postcodes-io', function () {
+        $this->app->bind('chadanuk.postcodes-io', function () {
             return (new ApiClientFactory)->create();
         });
     }

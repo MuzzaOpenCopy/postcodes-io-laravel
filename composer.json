@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Adityamenon\\PostcodesIo\\": "src/"
+            "Chadanuk\\PostcodesIo\\": "src/"
         }
     },
     "minimum-stability": "stable",
