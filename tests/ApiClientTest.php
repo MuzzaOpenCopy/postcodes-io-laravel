@@ -99,6 +99,7 @@ class ApiClientTest extends PHPUnit_Framework_TestCase
     {
         return array(
             array('lookup', array('postcode' => self::VALID_POSTCODE1)),
+            array('nearest', array('postcode' => self::VALID_POSTCODE1)),
             array('bulkLookup', array('postcodes' => array(self::VALID_POSTCODE1, self::VALID_POSTCODE2))),
             array(
                 'reverseGeocode',

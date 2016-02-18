@@ -48,6 +48,18 @@ class ApiClientFactory
                             )
                         )
                     ),
+                    'nearest' => array(
+                        'uri' => 'postcodes/{postcode}/nearest',
+                        'httpMethod' => 'GET',
+                        'responseModel' => 'getResponse',
+                        'parameters' => array(
+                            'postcode' => array(
+                                'location' => 'uri',
+                                'description' => 'The postcode to discover near postcodes.',
+                                'required' => true
+                            )
+                        )
+                    ),
                     'bulkLookup' => array(
                         'uri' => 'postcodes',
                         'httpMethod' => 'POST',
