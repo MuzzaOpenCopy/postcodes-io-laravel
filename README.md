@@ -1,8 +1,6 @@
 PostcodesIo Laravel Package
 ============================
-This is a fork of https://travis-ci.org/adityamenon/postcodes-io-laravel.svg to work on Laravel 5.
-
-[![Build Status](https://travis-ci.org/adityamenon/postcodes-io-laravel.svg?branch=1.0.1)](https://travis-ci.org/adityamenon/postcodes-io-laravel)
+This is a fork of chadanuk/postcodes-io-laravel.
 
 A laravel package for querying the [postcodes.io](http://postcodes.io) web service.
 
