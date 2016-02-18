@@ -23,7 +23,7 @@ Installation is handled via [Composer](http://getcomposer.org).
 
     ```js
     "require": {
-        "chadanuk/postcodes-io": "dev-master"
+        "chadanuk/postcodes-io-laravel": "dev-master"
     }
     ```
 2. Add the Service Provider to your `app/config/app.php` file:
