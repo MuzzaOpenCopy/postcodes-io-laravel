@@ -1,4 +1,4 @@
-<?php namespace Chadanuk\PostcodesIo;
+<?php namespace MuzzaOpenCopy\PostcodesIo;
 
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
@@ -6,6 +6,6 @@ class Facade extends IlluminateFacade
 {
     protected static function getFacadeAccessor()
     {
-        return 'chadanuk.postcodes-io';
+        return 'muzzaopencopy.postcodes-io';
     }
 }

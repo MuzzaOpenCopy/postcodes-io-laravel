@@ -1,4 +1,4 @@
-<?php namespace Chadanuk\PostcodesIo;
+<?php namespace MuzzaOpenCopy\PostcodesIo;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class PostcodesIoServiceProvider extends ServiceProvider
     */
     public function register()
     {
-        $this->app->bind('chadanuk.postcodes-io', function () {
+        $this->app->bind('muzzaopencopy.postcodes-io', function () {
             return (new ApiClientFactory)->create();
         });
     }

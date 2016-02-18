@@ -1,10 +1,10 @@
 {
-    "name": "chadanuk/postcodes-io-laravel",
+    "name": "muzzaopencopy/postcodes-io-laravel",
     "description": "",
     "authors": [
         {
-            "name": "chadanuk",
-            "email": "chadanuk@gmail.com"
+            "name": "Murray",
+            "email": "murray@opencopy.com.au"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Chadanuk\\PostcodesIo\\": "src/"
+            "MuzzaOpenCopy\\PostcodesIo\\": "src/"
         }
     },
     "minimum-stability": "stable",

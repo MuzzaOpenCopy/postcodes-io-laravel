@@ -1,4 +1,4 @@
-<?php namespace Chadanuk\PostcodesIo;
+<?php namespace MuzzaOpenCopy\PostcodesIo;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Command\Guzzle\Description;

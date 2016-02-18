@@ -1,6 +1,6 @@
 <?php 
 
-use Chadanuk\PostcodesIo\ApiClientFactory;
+use MuzzaOpenCopy\PostcodesIo\ApiClientFactory;
 use GuzzleHttp\Message\Response;
 use GuzzleHttp\Subscriber\Mock;
 
@@ -44,7 +44,7 @@ class ApiClientTest extends PHPUnit_Framework_TestCase
     const VALID_LONGITUDE2 = -3.43684;
 
     /**
-     * @var Chadanuk\PostcodesIo\ApiClientFactory The ClientFactory.
+     * @var MuzzaOpenCopy\PostcodesIo\ApiClientFactory The ClientFactory.
      */
     protected $clientFactory;
 

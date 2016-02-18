@@ -15,25 +15,25 @@ Installation is handled via [Composer](http://getcomposer.org).
 
 1. Run the following command:
     ```bash
-    $ composer require chadanuk/postcodes-io dev-master
+    $ composer require muzzaopencopy/postcodes-io dev-master
     ```
     This should add the following to your project's `composer.json` file:
 
     ```js
     "require": {
-        "chadanuk/postcodes-io-laravel": "dev-master"
+        "muzzaopencopy/postcodes-io-laravel": "dev-master"
     }
     ```
 2. Add the Service Provider to your `app/config/app.php` file:
 
     ```php
-    'providers' => array('Chadanuk\PostcodesIo\PostcodesIoServiceProvider')
+    'providers' => array('MuzzaOpenCopy\PostcodesIo\PostcodesIoServiceProvider')
     ```
 
 3. Add the Facade in the same file:
 
     ```php
-    'aliases' => array('PostcodesIo' => 'Chadanuk\PostcodesIo\Facade')
+    'aliases' => array('PostcodesIo' => 'MuzzaOpenCopy\PostcodesIo\Facade')
     ```
 
 Usage
