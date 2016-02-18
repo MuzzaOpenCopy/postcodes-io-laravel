@@ -9,7 +9,7 @@ class ApiClientTest extends PHPUnit_Framework_TestCase
     /**
      * @var string Test base URL.
      */
-    const BASE_URL = 'http://example.com';
+    const BASE_URL = 'http://api.postcodes.io';
 
     /**#@+
      * @var string A valid postcode.
@@ -44,7 +44,7 @@ class ApiClientTest extends PHPUnit_Framework_TestCase
     const VALID_LONGITUDE2 = -3.43684;
 
     /**
-     * @var Adityamenon\PostcodesIo\Api\ClientFactory The ClientFactory.
+     * @var Chadanuk\PostcodesIo\ApiClientFactory The ClientFactory.
      */
     protected $clientFactory;
 
@@ -58,14 +58,16 @@ class ApiClientTest extends PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
+        $responseArray = [];
+
         $this->clientFactory = new ApiClientFactory();
         $this->client = $this->clientFactory->create(self::BASE_URL);
 
-        $mock = new Mock(array(new Response(200)));
-
-        $this->client->getHttpClient()
-            ->getEmitter()
-            ->attach($mock);
+        $mockResponse = new \GuzzleHttp\Subscriber\Mock([
+            new GuzzleHttp\Message\Response(200, [], GuzzleHttp\Stream\Stream::factory(json_encode($responseArray)))
+        ]);
+        $guzzle = $this->client->getHttpClient();
+        $guzzle->getEmitter()->attach($mockResponse);
     }
 
     public function testFactoryCreateMethodReturnsInstanceOfClient()
